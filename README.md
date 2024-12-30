@@ -8,7 +8,6 @@ This repository focuses on automating Named Entity Recognition (NER) for electri
 
 ## Features
 
-- **Custom Dataset**: Uses a dataset tailored to electrical engineering texts.
 - **Fine-Tuning Pipeline**: Implements a complete pipeline for fine-tuning models like BERT and ModernBERT.
 - **Model Evaluation**: Includes detailed metrics like precision, recall, F1, and accuracy.
 - **NER Utilities**: Provides tools for post-processing NER results.
