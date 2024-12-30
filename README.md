@@ -102,15 +102,17 @@ After deploying a model to the Hugging Face Hub, use the following code snippet 
 
 ```python
 from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
+from utilities import clean_and_group_entities
 
-model_name = "disham993/electrical-ner-modernbert-large"
+model_name = "disham993/electrical-ner-ModernBERT-large"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForTokenClassification.from_pretrained(model_name)
 nlp = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_strategy="simple")
 
 text = "The Xilinx Vivado development suite was used to program the Artix-7 FPGA."
 results = nlp(text)
-print(results)
+cleaned_results = clean_and_group_entities(ner_results)
+print(cleaned_results)
 ```
 
 ---
