@@ -1,0 +1,5 @@
+git+https://github.com/huggingface/transformers.git@6e0515e99c39444caae39472ee1b2fd76ece32f1
+streamlit
+spacy
+pandas
+torch
