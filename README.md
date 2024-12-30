@@ -110,7 +110,7 @@ model = AutoModelForTokenClassification.from_pretrained(model_name)
 nlp = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_strategy="simple")
 
 text = "The Xilinx Vivado development suite was used to program the Artix-7 FPGA."
-results = nlp(text)
+ner_results = nlp(text)
 cleaned_results = clean_and_group_entities(ner_results)
 print(cleaned_results)
 ```
