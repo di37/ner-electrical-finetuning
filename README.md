@@ -93,6 +93,18 @@ HF_TOKEN=your_hugging_face_token
 
 ---
 
+## Results and Evaluation
+
+**Evaluation Metric Plots**
+
+<img src="screenshot/1.png" alt="Evaluation Metric Plots" width="750" />
+
+**Final Metrics Comparison**
+
+<img src="screenshot/2.png" alt="Final Metrics Comparison" width="750" />
+
+Refer to the [Medium article](https://medium.com/@d.isham.ai93/automating-electrical-engineering-text-analysis-with-named-entity-recognition-ner-part-2-add03cd99982) for in-depth analysis of these obtained results.
+
 ## How to Use the Models
 
 ### Inference Example
